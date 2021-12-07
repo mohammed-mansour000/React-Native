@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "temp02-name",
+    "slug": "temp02-name",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "temp02-name",
+  "android":{
+    "permissions":["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
+  }
+}
