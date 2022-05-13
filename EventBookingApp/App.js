@@ -42,7 +42,10 @@ export default function App() {
           name="Featured"
           component={Tabs}
         />
-        <Stack.Screen name="EventDetail" component={EventDetail} />
+        <Stack.Screen 
+          name="EventDetail" 
+          component={EventDetail} 
+        />
       </Stack.Navigator>
     </NavigationContainer>
   ) : (

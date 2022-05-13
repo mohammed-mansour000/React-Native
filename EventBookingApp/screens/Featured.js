@@ -48,14 +48,14 @@ const Featured = ({ navigation }) => {
             style={{
               width: SIZES.width / 2 + 50,
               height: SIZES.width / 2 + 50,
-              justifyContent: 'space-between'
+              justifyContent: 'space-between',
             }}
             >
               <View 
                 style={{ 
                   alignItems: 'flex-end',
                   marginHorizontal: 15,
-                  marginVertical: 15
+                  marginVertical: 15,
                 }}
               >
                 <DateBox>
@@ -65,7 +65,7 @@ const Featured = ({ navigation }) => {
               </View>
               <View style={{
                 marginLeft: 15,
-                marginBottom: 20
+                marginBottom: 20,
               }}>
                 <McText style={{opacity: 0.5}}>{item.type}</McText>
                 <McText h2>{item.title}</McText>

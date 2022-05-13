@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Button, TextInput, ScrollView, FlatList, TouchableOpacity } from 'react-native';
+import DesignPractice from './components/DesignPractice';
 
 export default function App() {
   const [name, setName] = useState('hamzi');
@@ -32,7 +33,9 @@ export default function App() {
     })
   }
   return (
-    <View style={styles.container}>
+    <>
+      <DesignPractice />
+    
       {/* <View>
         <Text style={styles.boldText}>Enter Name: </Text>
         <TextInput 
@@ -70,17 +73,20 @@ export default function App() {
 
       {/* -------------------------------------------------------- */}
       {/* better for performance */}
-      <FlatList 
-        keyExtractor={(item) => item.id}
-        data={people}
-        renderItem={({ item }) => ( 
-          <TouchableOpacity onPress={ () => pressHandler(item.id) }>
-              <Text style={styles.item}>{item.name}</Text>
-            </TouchableOpacity>
-         )}
-      />
+    {/* // <View style={styles.container}>
+     
+    //   <FlatList 
+    //     keyExtractor={(item) => item.id}
+    //     data={people}
+    //     renderItem={({ item }) => ( 
+    //       <TouchableOpacity onPress={ () => pressHandler(item.id) }>
+    //           <Text style={styles.item}>{item.name}</Text>
+    //         </TouchableOpacity>
+    //      )}
+    //   />
       
-    </View>
+    // </View> */}
+    </>
   );
 }
 
